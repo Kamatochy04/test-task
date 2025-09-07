@@ -1,0 +1,46 @@
+.dropdownContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.dropdown {
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background: #fff;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: #4b5e9f;
+  }
+
+  &:disabled {
+    background: #f5f5f5;
+    cursor: not-allowed;
+  }
+}
+
+.error {
+  border-color: #ef4444;
+  background-color: #fff6f6;
+
+  &:focus {
+    border-color: #dc2626;
+  }
+}
+
+.errorText {
+  font-size: 14px;
+  color: #ef4444;
+  margin-top: 4px;
+}

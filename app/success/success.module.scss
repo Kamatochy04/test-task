@@ -1,0 +1,26 @@
+.block {
+  width: 500px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+
+  p {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #000;
+  }
+  .link {
+    width: 100%;
+    button {
+      width: 100%;
+    }
+  }
+}

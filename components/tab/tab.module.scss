@@ -1,0 +1,44 @@
+.deliveryTabs {
+  display: flex;
+  gap: 8px;
+}
+
+.tab {
+  width: 100%;
+  display: block;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f5f5f5;
+  cursor: pointer;
+  font-size: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #757575;
+  &:hover:not(:disabled) {
+    transform: scale(1.04);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &.active {
+    background: #707070;
+    color: #fff;
+  }
+}
+
+.noOptions {
+  color: #666;
+  font-size: 14px;
+}
+
+.errorText {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+}

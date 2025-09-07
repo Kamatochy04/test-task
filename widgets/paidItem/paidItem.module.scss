@@ -1,0 +1,35 @@
+.card {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 52px 1fr 47px;
+  gap: 8px;
+  &__img {
+    border-radius: 16px;
+    width: 52px;
+    height: 52px;
+    background: #737373;
+  }
+  &__descr {
+    &Text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: #000;
+    }
+  }
+}
+
+.price {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000;
+}
+
+.text {
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 50%;
+  color: #000;
+}

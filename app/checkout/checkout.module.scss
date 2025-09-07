@@ -1,0 +1,201 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  position: relative;
+  min-width: 550px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+
+  &__header {
+    padding: 24px 24px 0 24px;
+    background: #eaeaea;
+  }
+
+  &__content {
+    &List {
+      display: flex;
+      flex-direction: column;
+      min-height: 400px;
+      padding: 21px 24px 24px 24px;
+    }
+  }
+
+  &__footer {
+    padding: 0 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+
+.card {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 90px 1fr 47px;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #e0e0e0; // Добавлено для разделения карточек
+
+  &__img {
+    width: 90px;
+    height: 90px;
+    border-radius: 16px;
+    background: #000;
+  }
+
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &Title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      color: #000;
+    }
+
+    &Text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: #000;
+    }
+  }
+}
+
+.deleted {
+  border: 1px solid #767676;
+  border-radius: 8px;
+  padding: 8px 15px 8px 8px;
+  width: 47px;
+  height: 47px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.29); // Аналог #00000049
+  }
+}
+
+.stepIndicator {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+
+  & > div {
+    font-size: 18px;
+    font-weight: 600;
+
+    &.active {
+      color: #3b82f6;
+    }
+
+    &.completed {
+      color: #6b7280;
+    }
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  & > div {
+    select {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #d9d9d9;
+      background: #000;
+      color: #eaeaea;
+      font-size: 16px;
+
+      &:focus {
+        outline: none;
+        border-color: #3b82f6;
+      }
+    }
+
+    .error {
+      color: #ef4444;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+  }
+}
+
+.button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+
+  &.primary {
+    background: #3b82f6;
+    color: #eaeaea;
+
+    &:hover {
+      background: #2563eb;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  &.secondary {
+    background: #4b5563;
+    color: #eaeaea;
+
+    &:hover {
+      background: #374151;
+    }
+  }
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  & > div {
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #eaeaea;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #eaeaea;
+    }
+  }
+
+  .total {
+    font-size: 20px;
+    font-weight: 700;
+    color: #eaeaea;
+  }
+}

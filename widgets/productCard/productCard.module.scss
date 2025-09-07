@@ -1,0 +1,42 @@
+.card {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 90px 1fr 47px;
+  gap: 16px;
+  padding: 16px 0;
+  &__img {
+    width: 90px;
+    height: 90px;
+    border-radius: 16px;
+    background: #000;
+  }
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    &Title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      color: #000;
+    }
+    &Text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: #000;
+    }
+  }
+}
+
+.deleted {
+  border: 1px solid #767676;
+  border-radius: 8px;
+  width: 47px;
+  height: 47px;
+  cursor: pointer;
+  &:hover {
+    background: #00000049;
+  }
+}
